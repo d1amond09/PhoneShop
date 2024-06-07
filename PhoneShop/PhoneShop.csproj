@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <Configurations>Debug;Release;njnmkml;isvffj;ава;ewfdfewd;dcvdsd;vngf;sgfddgdf;ssdsd;asdasdasdas</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="data\images\login_icon.png" />
+    <None Remove="data\images\logo.png" />
+    <None Remove="data\images\logo.png._00_" />
+    <None Remove="data\images\password_icon.png" />
+    <None Remove="data\images\phones.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="4.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="App.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PhoneShop.BLL\PhoneShop.BLL.csproj" />
+    <ProjectReference Include="..\PhoneShop.DAL\PhoneShop.DAL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="data\images\login_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="data\images\logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="data\images\password_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="data\images\phones.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="data\reports\" />
+  </ItemGroup>
+
+</Project>
